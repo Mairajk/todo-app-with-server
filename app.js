@@ -16,7 +16,7 @@ const todoPost = (e) => {
             let data = response.data.data;
             console.log("data : ", data);
 
-            document.querySelector(`#todosDiv`).innerHTML = ""
+            document.querySelector(`#todosDiv`).innerHTML = " <h3> Your Todos : </h3>"
 
             data.map(eachTodo => {
                 console.log("eachTodo : ", eachTodo);
@@ -38,10 +38,11 @@ const getAllTodos = () => {
             let data = response.data.data;
 
 
-            document.querySelector(`#todosDiv`).innerHTML = ""
+            document.querySelector(`#todosDiv`).innerHTML = " <h3> Your Todos : </h3>"
 
+            console.log("data : ", data);
             data.map(eachTodo => {
-                document.querySelector(`#todosDiv`).innerHTML += `<div> ${eachTodo} </div>`
+                document.querySelector(`#todosDiv`).innerHTML += `<div> ${eachTodo} </div>`;
             })
 
         })
