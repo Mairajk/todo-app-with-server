@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,20 @@
     <title>Document</title>
 
 </head>
+
 <body>
-    
+    <h1>Todo App with server</h1>
+
+    <form action="" onsubmit="todoPost(event)">
+        <label for="todoInput">Enter Todo : </label>
+        <input type="text" id="todoInput" required>
+        <button type="submit">Post</button>
+    </form>
+    <!-- <button onclick=""></button> -->
+    <div class="todosDiv" id="todosDiv">
+        <h3> Your Todos : </h3>
+    </div>
+
 </body>
+
 </html>
